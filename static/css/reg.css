@@ -1,0 +1,63 @@
+.reg-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background: url('{% static "img/reg-bg.jpeg" %}') no-repeat center center fixed; */
+    background-size: cover;
+  }
+  
+  .reg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .reg-form-box {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reg-form-box-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .reg-first-name,
+  .reg-last-name,
+  .reg-pass,
+  .reg-confrim-pass,
+  .reg-email{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reg-btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .reg-page-note {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .reg-page-to-login-page {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

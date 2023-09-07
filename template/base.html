@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtConnect</title>
+
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reg.css' %}">
+    
+    <!-- FONT & OTHER LINK -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    {% include "include/header.html" %}
+    {% block content %}
+      
+
+    
+    {% endblock content %}
+    {% include "include/footer.html" %}
+
+    <!-- CUSTOM JS LINK -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+<nav>
+    <div class="upper-nav">
+      <div class="upper-nav-right">
+        {% if user.is_authenticated %}
+          
+          <a href="{% url 'logout' %}">Logout</a>
+        
+          {% else %}
+
+            <a href="{% url 'login' %}">Login</a>
+            <a href="#">|</a>
+            <a href="{% url 'register' %}">Register</a>
+
+        {% endif %}
+        
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+    <div class="nav-line"></div>
+    <div class="lower-nav">
+        <div class="lower-nav-left">
+          <a class="nav-logo" href="{% url 'homepage' %}">
+            <img src="{% static 'img/logo.svg' %}" alt="logo" style="height: 35px; width: 150px;">
+          </a>
+        </div>
+        <div class="lower-nav-mid">
+          <a class="nav-type-arts" href="#">Add category</a>
+          <a class="nav-type-arts" href="#">Add subcategory</a>
+          <a class="nav-type-arts" href="#">Show category</a>
+        </div>
+        <div class="lower-nav-right">
+          <div class="nav-search">
+            <input class="nav-search-bar" type="text" placeholder="Search">
+            <button class="nav-search-button" type="submit">Search</button>
+          </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,64 @@
+/* login.css */
+
+.login-page {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background: url('{% static "img/login-bg.webp" %}') no-repeat center center fixed; */
+  background-size: cover;
+}
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .login-form-box {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form-box-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .login-email,
+  .login-pass,
+  .login-btn{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-page-note{
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-page-to-reg-page {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

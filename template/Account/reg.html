@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="reg-page" style="background-image: url('{% static 'img/reg-bg.jpeg' %}')">
+  {% if messages %}
+    {% for message in messages %}
+
+      <div class="form-alert">
+        <span class="alert-closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        {{message}}
+      </div>
+    {% endfor %}
+  {% endif %}  
+  <div class="reg-container">
+      <div class="reg-form-box">
+        <h2 class="reg-form-box-title">ArtConnect Registration</h2>
+        <form action="{% url 'register' %}" method="POST">
+          {% csrf_token %}
+          <input class="reg-first-name" type="text" id="first-name" name="first-name" placeholder="First Name" required>
+          <input class="reg-last-name" type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+          <input class="reg-pass" type="password" id="password" name="password" placeholder="Password" required>
+          <input class="reg-confrim-pass" type="password" id="confrim-password" name="confirm-password" placeholder="Confirm Password" required>
+          <input class="reg-email" type="email" id="email" name="email" placeholder="E-mail" required>
+          <div>
+            <button class="reg-btn" type="submit" >Register</button>
+          </div>
+          <p class="reg-page-note">Already have an account? <a class="reg-page-to-login-page" href="{% url 'login' %}">Login</a></p>
+        </form>
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
+
