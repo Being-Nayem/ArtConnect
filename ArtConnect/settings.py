@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-zp5qrim+l0^zu4%xyn(#dap%vtf+768=-gj6%)_ns4)u*$6qe6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['artconnect-uckk.onrender.com']
 
 
 # Application definition
